@@ -66,7 +66,7 @@ let favoriteFoods = ["Pizza", "Sushi", "peanut", "Burgers", "pasta"];
 // Modify the HTML element with the id of food to display your favorite foods array. 
 // Remember that you set a variable named foodElement in Step 3 to reference the element with the id of food.
 let foodsAsString = favoriteFoods.join(", ");
-foodElement.innerHTML = `My favorite foods: ${foodsAsString}`;
+foodElement.innerHTML = `<strong>My favorite foods:</strong> ${foodsAsString}`;
 
 // Add a new favorite food item to the array
 let anotherFavoriteFood = "Tacos";
