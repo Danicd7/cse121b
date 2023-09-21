@@ -1,3 +1,5 @@
+
+
 /* W02-Task - Profile Home Page */
 
 
@@ -9,7 +11,7 @@
 const fullName = "Daniel Candido Caetano Da Silva";
 
 // Declare and instantiate a variable to hold the current year.
-const currentYear = date.getFullYear();
+const currentYear = new date().getFullYear();
 
 // Declare and instantiate a variable to hold the file path (location) 
 // and file name of the image that you placed in the images folder as a string
@@ -66,10 +68,10 @@ foodElement.innerHTML = `My favorite foods: ${foodsAsString}`;
 
 // Add a new favorite food item to the array
 const anotherFavoriteFood = "Tacos";
-favoriteFoods.push(newFavoriteFood);
+favoriteFoods.push(anotherFavoriteFood);
 
 // Display the modified array with line breaks in an HTML element
-foodElement.innerHTML += `<br>${favoriteFoods}`;
+foodElement.innerHTML += "<br>" + favoriteFoods.join("<br>");
 
 // Remove the first element from the array
 favoriteFoods.shift();
