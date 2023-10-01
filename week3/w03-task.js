@@ -96,14 +96,48 @@ function divide(dividend, divisor) {
 
 
 /* ARRAY METHODS - Functional Programming */
+
+// Declare and instantiate a variable to store the current date
+const currentDate = new Date();
+
+// Declare a variable to hold the current year
+const currentYear = currentDate.getFullYear();
+
+// Assign the current year to an HTML form element with ID "year"
+document.getElementById("year").value = currentYear;
 /* Output Source Array */
+
+// Declare and instantiate an array variable to hold the numbers 1 through 13
+const numbersArray = Array.from({ length: 13 }, (_, i) => i + 1);
+
+// Assign the value of the array variable to the HTML element with ID "array"
+document.getElementById("array").textContent = numbersArray.join(", ");
 
 /* Output Odds Only Array */
 
+// Use the filter() array method to find all odd numbers and assign the result to the HTML element with ID "odds"
+const oddNumbers = numbersArray.filter(number => number % 2 === 1);
+document.getElementById("odds").textContent = oddNumbers.join(", ");
+
 /* Output Evens Only Array */
 
+// Use the filter() array method to find all even numbers and assign the result to the HTML element with ID "evens"
+const evenNumbers = numbersArray.filter(number => number % 2 === 0);
+document.getElementById("evens").textContent = evenNumbers.join(", ");
+
+
 /* Output Sum of Org. Array */
+// Use the reduce() array method to sum the array elements and assign the result to the HTML element with ID "sumOfArray"
+const sum = numbersArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+document.getElementById("sumOfArray").textContent = sum;
 
 /* Output Multiplied by 2 Array */
+// Use the map() array method to multiply each element in the array by 2 and assign the result to the HTML element with ID "multiplied"
+const multipliedArray = numbersArray.map(number => number * 2);
+document.getElementById("multiplied").textContent = multipliedArray.join(", ");
 
 /* Output Sum of Multiplied by 2 Array */
+
+// Use the map() and reduce() array methods to sum the array elements after multiplying each element by two. Assign the result to the HTML element with ID "sumOfMultiplied"
+const sumOfMultiplied = multipliedArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+document.getElementById("sumOfMultiplied").textContent = sumOfMultiplied;
