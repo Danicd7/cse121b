@@ -1,0 +1,30 @@
+body {
+    background-color: #4CAF50; /* Green background color */
+    color: #fff; /* White text color for readability */
+    font-family: Arial, sans-serif; /* Choose a suitable font family */
+    text-align: center; /* Center-align text */
+    margin: 0; /* Remove default margin to fully occupy the viewport */
+    padding: 0; /* Remove default padding */
+}
+
+#quote-container {
+    margin-top: 100px; /* Add margin for the quote container */
+}
+
+#quote {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+}
+
+#new-quote-button {
+    background-color: #fff; /* White button background color */
+    color: #4CAF50; /* Green button text color */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none;
+    cursor: pointer;
+}
+
+
+#new-quote-button:hover {
+    background-color: #4CAF50; /* Change button background color on hover */
+    color: #fff; /* Change text color on hover */
+}
